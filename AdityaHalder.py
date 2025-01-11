@@ -376,14 +376,33 @@ async def start_message_private(client, message):
 ├───────────────────⦿‍
 │            •••✰ 👑👑 ✰•••
 ╰───────────────────⦿"""
-        buttons = InlineKeyboardMarkup(
-            [
+            buttons = InlineKeyboardMarkup(
                 [
                     InlineKeyboardButton(
-                        text="🥀 Add Me In Your Chat ✨",
-                        url=f"https://t.me/{bot.me.username}?startgroup=true",
+                       text="𝖴ᜣ𝘥ɐꪻꫀs  ",
+                       url=f"https://t.me/VICK_NETWORK"
+                    ), 
+                    InlineKeyboardButton(
+                       text="Տꪊ𝘱Oᖇꪻ𝘴",
+                       url=f"https://t.me/VICK_SUPPORT"
                     )
                 ],
+                [
+                    InlineKeyboardButton(
+                       text="♲︎︎︎ልᴅᴅ ꪑɛ ꪮᴜʀɛ 𝖦ʀօʊप ♲︎︎",
+                       url=f"https://t.me/{bot.me.username}?startgroup=true",
+                    )
+                ],
+                [
+                    InlineKeyboardButton(text="☃︎ ꪮwꪀə᥅ ☃", 
+                       url=f"https://t.me/TEAM_EAGLE_OWNER︎", 
+                    )
+                ],
+                [
+                    InlineKeyboardButton(text="Earn Money Daily", 
+                        url=f"https://t.me/TEAM_EAGLE_AGENTS", 
+                    )
+                ] ,
                 [
                     InlineKeyboardButton(
                         text="🌺 Open Command List 🌷",
