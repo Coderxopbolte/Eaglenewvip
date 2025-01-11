@@ -362,18 +362,21 @@ async def start_message_private(client, message):
             pass
             
     else:
-        caption = f"""**➻ Hello, {mention}
-
-🥀 I am An ≽ Advanced ≽ High Quality
-Bot, I Can Stream 🌿 Audio & Video In
-Your ♚ Channel And Group.
-
-🐬 Must Click ❥ Open Command List
-Button ⋟ To Get More Info's 🦋 About
-My All Commands.
-
-💐 Feel Free ≽ To Use Me › And Share
-With Your ☛ Other Friends.**"""
+        caption = f"""**╭───────────────────⦿‍*
+│❍ • ʜᴇʏ  𝐓ɦє_𝐑єαℓ_𝐒ƭαɾ ™ •‍*
+│❍ • ɪ ᴀᴍ  @Khwahish_Music_bot•‍
+├───────────────────⦿‍
+│❍ • ɪ ʜᴀᴠᴇ sᴘᴇᴄɪᴀʟ ғᴇᴀᴛᴜʀᴇs •‍
+├───────────────────⦿‍
+│❍ • ᴀ ғᴀsᴛ & ᴘᴏᴡᴇʀғᴜʟ ᴛᴇʟᴇɢʀᴀᴍ ᴍᴜsɪᴄ‍
+│     ʙᴏᴛ ᴡɪᴛʜ ᴀᴡᴇsᴏᴍᴇ ғᴇᴀᴛᴜʀᴇs‍
+│❍ • ʏᴏᴜ ᴄᴀɴ ᴘʟᴀʏ ᴍᴜꜱɪᴄ + ᴠɪᴅᴇᴏ •‍
+│❍ • ʙᴇsᴛ ǫᴜɪʟɪᴛʏ ᴍᴜsɪᴄ sᴏᴜɴᴅ •‍
+│❍ • ɴᴏ ʟᴀɢs + ɴᴏ ᴀᴅs •‍
+│❍ • 24x7 ᴏɴʟɪɴᴇ sᴜᴘᴘᴏʀᴛ •‍
+├───────────────────⦿‍
+│               ✰ 𝖮ᴡ፝֠֩𝛈𝛆ʀ  ✰
+╰───────────────────⦿"""
         buttons = InlineKeyboardMarkup(
             [
                 [
