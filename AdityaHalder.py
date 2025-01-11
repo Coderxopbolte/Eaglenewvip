@@ -363,8 +363,7 @@ async def start_message_private(client, message):
             
     else:
         caption = f"""**╭───────────────────⦿‍*
-│❍ • ʜᴇʏ  𝐓ɦє_𝐑єαℓ_𝐒ƭαɾ ™ •‍*
-│❍ • ɪ ᴀᴍ  @Khwahish_Music_bot•‍
+│❍ • ʜᴇʏ {mention} •‍*
 ├───────────────────⦿‍
 │❍ • ɪ ʜᴀᴠᴇ sᴘᴇᴄɪᴀʟ ғᴇᴀᴛᴜʀᴇs •‍
 ├───────────────────⦿‍
@@ -375,7 +374,7 @@ async def start_message_private(client, message):
 │❍ • ɴᴏ ʟᴀɢs + ɴᴏ ᴀᴅs •‍
 │❍ • 24x7 ᴏɴʟɪɴᴇ sᴜᴘᴘᴏʀᴛ •‍
 ├───────────────────⦿‍
-│               ✰ 𝖮ᴡ፝֠֩𝛈𝛆ʀ  ✰
+│            •••✰ 👑👑 ✰•••
 ╰───────────────────⦿"""
         buttons = InlineKeyboardMarkup(
             [
@@ -417,26 +416,32 @@ async def start_message_private(client, message):
 
 @bot.on_callback_query(rgx("open_command_list"))
 async def open_command_list_alert(client, query):
-    caption = """**🥀 All Members Can Use:**
-/play - Stream Only Audio On VC.
-/vplay - Stream Audio With Video.
+    caption = f"""**♲︎︎︎ Ƥʟᴀʏ Ƈᴏᴍᴍᴀɴᴅs Cᴀɴ Aʟʟ Usᴇ:
+        
+/play  Ơʀ /vplay  Ơʀ /cplay -☀︎︎❥︎ Ɓᴏᴛ Ɯɪʟʟ Ƨᴛᴀʀᴛ Ƥʟᴀʏɪɴɢ Ƴᴏᴜʀ Ɠɪᴠᴇɴ 
+Ҩᴜᴇʀʏ Ơɴ ѵᴏɪᴄᴇ Ƈʜᴀᴛ Ơʀ Ƨᴛʀᴇᴀᴍ Լɪᴠᴇ Լɪɴᴋs Ơɴ Ꮙᴏɪᴄᴇ Ƈʜᴀᴛs.
 
-**👾 Only For Chat Admins:**
-/pause - Pause Running Stream.
-/resume - Resume Paused Stream.
-/skip - Skip Current Stream To Next.
-/end - Stop Current Running Stream.
+❥︎✰ 𝙰ᴅᴍɪɴ Ƈᴏᴍᴍᴀɴᴅs:
 
-**Note:** All Commands Will Work
-Only in Channels/Groups."""
+/pause -☀︎︎❥︎ Ƥᴀᴜsᴇ Ƭʜᴇ Ƥʟᴀʏɪɴɢ ᴍᴜsɪᴄ.
+/resume -☀︎︎❥︎ Ʀᴇsᴜᴍᴇ Ƭʜᴇ Ƥᴀᴜsᴇᴅ Mᴜsɪᴄ.
+/mute -☀︎︎❥︎ Mᴜᴛᴇ Ƭʜᴇ Ƥʟᴀʏɪɴɢ Mᴜsɪᴄ.
+/unmute -☀︎︎❥︎ Ʋɴᴍᴜᴛᴇ Ƭʜᴇ Mᴜᴛᴇᴅ Mᴜsɪᴄ.
+/skip  Ơʀ /next -☀︎︎❥︎ Ƨᴋɪᴘ Ƭʜᴇ Ƈᴜʀʀᴇɴᴛ Ƥʟᴀʏɪɴɢ Mᴜsɪᴄ.
+/stop  Ơʀ /end -☀︎︎❥︎ Ƨᴛᴏᴘ Ƭʜᴇ Ƥʟᴀʏɪɴɢ Mᴜsɪᴄ.
+/stats  -☀︎︎❥︎ Ƈʜᴇᴄᴋ Ɓᴏᴛs Ƨᴛᴀᴛs
+/ping -☀︎︎❥︎ Ƥɪɴɢ Ƭʜᴇ Ɓᴏᴛ ƛɴᴅ Ƈʜᴇᴄᴋ Ʀᴀᴍ, Ƈᴘᴜ Єᴛᴄ Ƨᴛᴀᴛs Ơғ Ɓᴏᴛ.
+
+❥︎❄︎ ɴᴏᴛᴇ: All Commands Will Work
+Only in Channels/Groups.**"""
     buttons = InlineKeyboardMarkup(
         [
             [
                 InlineKeyboardButton(
-                    text="🔙 Back",
-                    callback_data="back_to_home",
+                    text="»•Back•«",
+                    callback_data="back_to_home"
                 )
-            ],
+            ], 
         ]
     )
     try:
@@ -449,26 +454,47 @@ Only in Channels/Groups."""
 @bot.on_callback_query(rgx("back_to_home"))
 async def back_to_home_menu(client, query):
     mention = query.from_user.mention
-    caption = f"""**➻ Hello, {mention}
-
-🥀 I am An ≽ Advanced ≽ High Quality
-Bot, I Can Stream 🌿 Audio & Video In
-Your ♚ Channel And Group.
-
-🐬 Must Click ❥ Open Command List
-Button ⋟ To Get More Info's 🦋 About
-My All Commands.
-
-💐 Feel Free ≽ To Use Me › And Share
-With Your ☛ Other Friends.**"""
-    buttons = InlineKeyboardMarkup(
-        [
+    caption = f"""**╭───────────────────⦿‍*
+│❍ • ʜᴇʏ {mention} •‍*
+├───────────────────⦿‍
+│❍ • ɪ ʜᴀᴠᴇ sᴘᴇᴄɪᴀʟ ғᴇᴀᴛᴜʀᴇs •‍
+├───────────────────⦿‍
+│❍ • ᴀ ғᴀsᴛ & ᴘᴏᴡᴇʀғᴜʟ ᴛᴇʟᴇɢʀᴀᴍ ᴍᴜsɪᴄ‍
+│     ʙᴏᴛ ᴡɪᴛʜ ᴀᴡᴇsᴏᴍᴇ ғᴇᴀᴛᴜʀᴇs‍
+│❍ • ʏᴏᴜ ᴄᴀɴ ᴘʟᴀʏ ᴍᴜꜱɪᴄ + ᴠɪᴅᴇᴏ •‍
+│❍ • ʙᴇsᴛ ǫᴜɪʟɪᴛʏ ᴍᴜsɪᴄ sᴏᴜɴᴅ •‍
+│❍ • ɴᴏ ʟᴀɢs + ɴᴏ ᴀᴅs •‍
+│❍ • 24x7 ᴏɴʟɪɴᴇ sᴜᴘᴘᴏʀᴛ •‍
+├───────────────────⦿‍
+│            •••✰ 👑👑 ✰•••
+╰───────────────────⦿"""
+        buttons = InlineKeyboardMarkup(
             [
                 InlineKeyboardButton(
-                    text="🥀 Add Me In Your Chat ✨",
+                    text="𝖴ᜣ𝘥ɐꪻꫀs  ",
+                    url=f"https://t.me/VICK_NETWORK"
+                ),
+                InlineKeyboardButton(
+                    text="Տꪊ𝘱Oᖇꪻ𝘴",
+                    url=f"https://t.me/VICK_SUPPORT"
+                )
+            ],
+            [
+                InlineKeyboardButton(
+                    text="♲︎︎︎ልᴅᴅ ꪑɛ ꪮᴜʀɛ 𝖦ʀօʊप ♲︎︎",
                     url=f"https://t.me/{bot.me.username}?startgroup=true",
                 )
             ],
+            [
+                InlineKeyboardButton(text="☃︎ ꪮwꪀə᥅ ☃", 
+                    url=f"https://t.me/TEAM_EAGLE_OWNER︎", 
+                )
+            ],
+            [
+                InlineKeyboardButton(text="Earn Money Daily", 
+                    url=f"https://t.me/TEAM_EAGLE_AGENTS", 
+                )
+            ], 
             [
                 InlineKeyboardButton(
                     text="🌺 Open Command List 🌷",
